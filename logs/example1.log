@@ -17,18 +17,4 @@
 2019-12-02T01:13:42Z I! Starting Telegraf 
 2019-12-02T01:13:52Z I! Starting Telegraf 
 2019-12-02T01:19:44Z I! Starting Telegraf 
-2019-12-02T01:19:44Z E! [telegraf] Error running agent: Error loading /Users/dongxiaoyi/Go/src/agent/monitor.example.1.conf, open /Users/dongxiaoyi/Go/src/agent/monitor.example.1.conf: no such file or directory
-2019-12-02T01:20:10Z I! Starting Telegraf 
-2019-12-02T01:20:10Z E! [telegraf] Error running agent: Error loading /Users/dongxiaoyi/Go/src/agent/monitor.example.1.conf, open /Users/dongxiaoyi/Go/src/agent/monitor.example.1.conf: no such file or directory
-2019-12-02T01:20:56Z I! Starting Telegraf 
-2019-12-02T01:20:56Z E! [telegraf] Error running agent: Error loading /Users/dongxiaoyi/Go/src/agent/monitor.example.1.conf, open /Users/dongxiaoyi/Go/src/agent/monitor.example.1.conf: no such file or directory
-2019-12-02T01:21:33Z I! Starting Telegraf 
-2019-12-02T01:21:33Z E! [telegraf] Error running agent: Error loading /Users/dongxiaoyi/Go/src/agent/monitor.example.1.conf, open /Users/dongxiaoyi/Go/src/agent/monitor.example.1.conf: no such file or directory
-2019-12-02T01:22:03Z I! Starting Telegraf 
-2019-12-02T01:22:03Z E! [telegraf] Error running agent: Error loading /Users/dongxiaoyi/Go/src/agent/monitor.example.1.conf, open /Users/dongxiaoyi/Go/src/agent/monitor.example.1.conf: no such file or directory
-2019-12-02T01:22:18Z I! Starting Telegraf 
-2019-12-02T01:22:18Z E! [telegraf] Error running agent: Error loading /Users/dongxiaoyi/Go/src/agent/monitor.example.1.conf, open /Users/dongxiaoyi/Go/src/agent/monitor.example.1.conf: no such file or directory
-2019-12-02T01:23:26Z I! Starting Telegraf 
-2019-12-02T01:23:26Z E! [telegraf] Error running agent: Error loading /Users/dongxiaoyi/Go/src/agent/monitor.example.1.conf, open /Users/dongxiaoyi/Go/src/agent/monitor.example.1.conf: no such file or directory
-2019-12-02T01:24:53Z I! Starting Telegraf 
-2019-12-02T01:29:12Z I! Starting Telegraf 
+
