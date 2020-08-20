@@ -53,8 +53,8 @@ Agent启动配置列表如下:
 +----------+---------------------------------+--------------------------------+-----------------+----------+-------------------+-------------------+
 |   名称   |            项目路径             |            配置文件            |    输入插件     | 输出插件 |     日志文件      |      PID文件      |
 +----------+---------------------------------+--------------------------------+-----------------+----------+-------------------+-------------------+
-| example1 | /Users/dongxiaoyi/Go/src/agent/ | configs/monitor.example.1.conf | net:disk:diskio | kafka    | logs/example1.log | pids/example1.pid |
-| example2 | /Users/dongxiaoyi/Go/src/agent/ | configs/monitor.example.2.conf | net:disk        | kafka    | logs/example2.log | pids/example2.pid |
+| example1 | /Users/dong/Go/src/agent/ | configs/monitor.example.1.conf | net:disk:diskio | kafka    | logs/example1.log | pids/example1.pid |
+| example2 | /Users/dong/Go/src/agent/ | configs/monitor.example.2.conf | net:disk        | kafka    | logs/example2.log | pids/example2.pid |
 +----------+---------------------------------+--------------------------------+-----------------+----------+-------------------+-------------------+
 
 `,
