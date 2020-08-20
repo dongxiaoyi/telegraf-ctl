@@ -4,11 +4,11 @@
 
 ## 一、项目结构
 ```shell
-$ tree agentctl
-agentctl
+$ tree telegraf-ctl
+telegraf-ctl
 ├── README.md                     ## 说明文档
 ├── agent.conf                    ## 配置agent实例的配置文件
-├── agentctl                      ## agent管理指令
+├── telegraf-ctl                      ## agent管理指令
 ├── configs                       ## 不同的agent实例的配置文件
 │   ├── monitor.example.1.conf    ## agent配置文件
 │   └── monitor.example.2.conf
@@ -21,6 +21,11 @@ agentctl
     ├── example1.pid
     └── example2.pid
 ``` 
+
+编译说明：
+```shell
+$ CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build  -o telegraf-ctl
+```
 
 ## 二、agent启动配置
 > 配置文件示例：agent.conf
@@ -46,7 +51,7 @@ pid_file = example2.pid
 
 ## 三、帮助说明
 ```shell
-$ ./agentctl help
+$ ./telegraf-ctl help
 Usage:
   agentctl [command]
 
@@ -66,7 +71,7 @@ Use "agentctl [command] --help" for more information about a command.
 ## 四、显示Agent启动配置项
 > 示例如下：
 ```shell
-$ ./agentctl list
+$ ./telegraf-ctl list
 Agent启动配置列表如下:
 +----------+---------------------------------+--------------------------------+-------------+----------+-------------------+-------------------+
 |   名称   |            项目路径             |            配置文件            |  输入插件   | 输出插件 |     日志文件      |      PID文件      |
@@ -79,7 +84,7 @@ Agent启动配置列表如下:
 ## 五、启动agent
 > 示例(启动所有Agent)：
 ```shell
-## ./agentctl start   或者 ./agentctl start all
+## ./telegraf-ctl start   或者 ./agentctl start all
 $ ./agentctl start all
 [2019-11-30 22:50:29]   info    Agent [example1] 启动成功！
 [2019-11-30 22:50:29]   info    Agent [example2] 启动成功！
@@ -87,30 +92,30 @@ $ ./agentctl start all
 
 > 示例(启动某一个Agent)
 ```shell
-$ ./agentctl start example1
+$ ./telegraf-ctl start example1
 [2019-11-30 22:52:14]   info    Agent [example1] 启动成功！
 ```
 
 ## 六、关闭agent
 > 示例（关闭所有Agent）
 ```shell
-## ./agentctl stop   或者 ./agentctl stop all
-$ ./agentctl stop all
+## ./telegraf-ctl stop   或者 ./agentctl stop all
+$ ./telegraf-ctl stop all
 [2019-11-30 22:54:03]   info    Agent [example1] 已停止！
 [2019-11-30 22:54:03]   info    Agent [example2] 已停止！ 
 ```
 
 > 示例(关闭某一个Agent)
 ```shell
-$ ./agentctl start example2
+$ ./telegraf-ctl start example2
 [2019-11-30 22:54:36]   info    Agent [example2] 已停止！
 ```
 
 ## 七、重启Agent
  > 示例（重启所有Agent）
 ```shell
-## ./agentctl restart   或者 ./agentctl stop all
-$ ./agentctl restart
+## ./telegraf-ctl restart   或者 ./agentctl stop all
+$ ./telegraf-ctl restart
 [2019-12-02 09:29:11]   info    Agent [example1] 已停止！
 [2019-12-02 09:29:11]   info    Agent [example2] 已停止！
 [2019-12-02 09:29:12]   info    Agent [example1] 启动成功！
@@ -119,14 +124,14 @@ $ ./agentctl restart
 
 > 示例(重启某一个Agent)
 ```shell
-$ ./agentctl restart example2
+$ ./telegraf-ctl restart example2
 [2019-12-02 09:36:12]   info    Agent [example2] 已停止！
 [2019-12-02 09:36:13]   info    Agent [example2] 启动成功！
 ```
 ## 八、查看Agent状态
 > 示例：
 ```shell
-$ ./agent status
+$ ./telegraf-ctl status
 Agent运行状态如下:
 +----------+------+----------+
 |   名称   | PID  | 运行状态 |
@@ -137,7 +142,7 @@ Agent运行状态如下:
 ```
 
 ```shell
-$ ./agent status
+$ ./telegraf-ctl status
 Agent运行状态如下:
 +----------+-----+----------+
 |   名称   | PID | 运行状态 |
